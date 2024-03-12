@@ -18,10 +18,10 @@ export const DefaultVariant: Story = () => {
 //   type?: string;
 //   value: string;
 //   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
-//   validation?: (value: string) => string | undefined; // Custom validation function
-//   inputComponent?: React.ReactNode; // Custom input component
+//   validation?: (value: string) => string | undefined;
+//   inputComponent?: React.ReactNode;
 //   className?: string;
-//   inputProps?: React.InputHTMLAttributes<HTMLInputElement>; // Additional input props
+//   inputProps?: React.InputHTMLAttributes<HTMLInputElement>;
 // }
 
 // const SimpleInput: React.FC<SimpleInputProps> = ({
