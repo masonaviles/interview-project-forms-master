@@ -9,5 +9,5 @@ export * from './time-ago'
 export * from './typeahead-input'
 export * from './footer'
 export * from './pricing-plans'
-export * from '../primitives/SimpleInput';
+export * from '../primitives/EmailInput';
 export { default as ContactForm } from '../primitives/ContactForm';
