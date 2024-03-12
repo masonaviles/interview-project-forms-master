@@ -1,0 +1,27 @@
+{
+  "name": "@center-inc/common-web",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build",
+    "build:watch": "pnpm build --watch"
+  },
+  "dependencies": {
+    "common": "workspace:*",
+    "color": "^4.2.3"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "@types/color": "^3.0.5",
+    "@types/qs": "^6.9.7",
+    "@types/react": "*",
+    "qs": "^6.10.1",
+    "tsup": "^5.12.9"
+  },
+  "peerDependencies": {
+    "qs": "*",
+    "react": "*",
+    "@types/react": "*"
+  }
+}

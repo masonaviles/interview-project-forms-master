@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-center-react",
+  "description": "eslint config for react-based projects",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint": "^8.52.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

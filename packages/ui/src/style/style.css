@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 215 20.2% 65.1%;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-screen w-screen font-sans m-0 p-0;
+  }
+
+  h1 {
+    @apply text-4xl font-semibold tracking-tight my-0;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight my-0;
+  }
+
+  h3 {
+    @apply text-xl font-semibold leading-none tracking-tight;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  body {
+    scrollbar-width: thin;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply border border-slate-300 rounded-sm;
+  }
+
+  code {
+    @apply subpixel-antialiased;
+  }
+
+  a.link {
+    @apply text-blue-600 hover:text-blue-700;
+  }
+
+  table.table {
+    @apply w-full;
+    th,
+    td {
+      @apply p-2;
+    }
+    thead {
+      tr {
+        th {
+          @apply text-left font-medium;
+          /* @apply bg-black; */
+        }
+      }
+    }
+  }
+
+  .text {
+    @apply text-foreground;
+  }
+
+  .text-light {
+    @apply text-muted-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* .text-primary {
+    @apply text-primary-foreground;
+  }
+  .text-secondary {
+    @apply text-muted-foreground;
+  } */
+}
+
+/* body::-webkit-scrollbar {
+  width: 12px;
+} */
+
+/* body::-webkit-scrollbar-track {
+  background: white;
+} */
+
+/* body::-webkit-scrollbar-thumb {
+  background-color: #bababa;
+  border-radius: 12px;
+  border: 3px solid white;
+}
+*/
+.no-width-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* This enables word wrapping for prism */
+pre[class*='language-'],
+code[class*='language-'] {
+  overflow: auto;
+  word-break: break-word;
+}
+
+/* .prose {
+  --tw-prose-code: hsla(217.2 91.2% 59.8%);
+} */

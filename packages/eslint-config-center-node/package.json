@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-center-node",
+  "description": "eslint config for node projects",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-turbo": "^1.10.4",
+    "eslint-import-resolver-typescript": "^3.2.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

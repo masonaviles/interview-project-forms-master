@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.web.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "composite": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "outDir": "./dist"
+  },
+  "include": ["src/"]
+}
